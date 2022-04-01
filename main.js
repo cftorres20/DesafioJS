@@ -1,3 +1,44 @@
+class Product {
+  constructor(product, precio, medida, origen) {
+    this.product = product;
+    this.precio = Number(precio);
+    this.medida = medida;
+    this.origen = origen;
+  }
+}
+
+const productos = [];
+productos.push(new Product("A", 300, "M", "Arg"));
+productos.push(new Product("B", 450, "L", "Br"));
+productos.push(new Product("C", 500, "XL", "Chn"));
+
+function buscarProduct(produccion, Product) {
+  return produccion.find((obj) => obj.product === Product.toUpperCase());
+}
+
+for (let i = 0; i < 3; i++) {
+  let busqueda = buscarProduct(
+    productos,
+    prompt("Que producto desea consulta: A, B o C. (NO para salir)")
+  );
+
+  if (busqueda != undefined) {
+    alert(
+      "El producto " +
+        busqueda.product +
+        " su tamaño es " +
+        busqueda.medida +
+        " es de origen " +
+        busqueda.origen +
+        " y su valor es de " +
+        busqueda.precio +
+        " ARS "
+    );
+  } else {
+    break;
+  }
+}
+
 let consulta = prompt("¿Que producto desea comprar A, B o C?");
 let consultaDos = parseFloat(prompt("¿Cuantos productos desea comprar?"));
 
