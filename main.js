@@ -97,7 +97,7 @@ if (consulta == "C" || consulta == "c") {
   alert("Gracias por visitarnos");
 }
 
-let question = prompt(
+/*let question = prompt(
   "Que producto agregarias a nuestra cartera? 'NO para salir'  "
 );
 
@@ -109,4 +109,18 @@ while (question !== "NO") {
   for (let index = 0; index < nuevoProduct.length; index++) {
     console.log(nuevoProduct[index]);
   }
+}*/
+
+let newProductos = document.getElementById("todo");
+let btn_agregar = document.getElementById("addTodo");
+let lista = document.getElementById("todoList");
+
+function addProducto(item) {
+  console.log(item);
 }
+
+btn_agregar.addEventListener("click", () => {
+  let dato = newProductos.value;
+  addProducto(dato);
+  newProductos.value = "";
+});
