@@ -5,20 +5,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <h1>Desafios</h1>
+    <header class="header">
 
-    <h2>Productos que se sugieren agregar a nuestra carta</h1>
+        <div class="logo">
+            <img src="" alt="Logo_Kinkela">
+        </div>
 
-        <input type="text" placeholder="Sugerencia..." id="todo">
-        <button type="submit" id="addTodo">Agregar</button>
+        <nav class="menu">
+            <ul>
+                <li><a href="">INICIO</a></li>
+                <li><a href="">PRODUCTOS</a></li>
+                <li><a href="">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Bienvenido a Kinkela</h1>
+
+    <div class="parteUno">
+
+        <h2>Nuestros Productos</h2>
+
+        <p>En esta parte irian imagenes de productos</p>
+
+        <h3>Selecciona un producto</h3>
+
+        <div class="container">
+            <div class="mascotas-totales">
+                <div class="form-poner-en-adopcion oculto">
+                    <form action="" class="formulario-adopcion">
+
+                        <label for="Marca">Marca:</label>
+                        <select name="Marca" id="">
+                            <option value="0">Seleccione</option>
+                            <option value="1">MarcaA</option>
+                            <option value="2">MarcaB</option>
+                            <option value="3">MarcaC</option>
+                        </select> <br><br>
+
+                        <label for="Talle">Talle:</label>
+                        <select name="Talle" id="">
+                            <option value="0">Seleccione</option>
+                            <option value="1">TalleM</option>
+                            <option value="2">TalleL</option>
+                            <option value="3">TalleXL</option>
+                        </select> <br><br>
+
+                        <label for="Cantidad">Cantidad:</label>
+                        <select name="Cantidad" id="">
+                            <option value="0">Seleccione</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select> <br><br>
 
 
-        <script src="main.js"></script>
+                        <label for="">¿Desea comprar con Tarjeta de credito?</label><br><br>
+                        <label>SI</label>
+                        <input type="checkbox" id="check-1-1" name="check" onchange="comprobar(this)" />
+                        <label>NO</label>
+                        <input type="checkbox" id="cheack-1-2" name="check" onchange="comprobar(this)" />
 
+
+
+                        <!-- <div>
+                            <label>Abona con Tarjeta de Credito</label><br><br>
+                            <input type="radio" name="preg2" value="foo" /> SI
+                            <input type="radio" name="preg2" value="bar" /> NO
+                        </div> -->
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="parteDos">
+        <h3>Productos que se sugieren agregar a nuestra coleccion</h1>
+
+            <input type="text" placeholder="Sugerencia..." id="todo">
+            <button type="submit" id="addTodo">Agregar</button>
+    </div>
+
+    <footer class="footer">
+        <ul class="list">
+            <li><a href="">INICIO</a></li>
+            <li><a href="">PRODUCTOS</a></li>
+            <li><a href="">CONTACTO</a></li>
+        </ul>
+        <div class="copy">
+            <p>© Kinkela - Todos los derechos reservados.</p>
+        </div>
+
+    </footer>
+
+
+    <script src="main.js"></script>
 </body>
 
 </html>

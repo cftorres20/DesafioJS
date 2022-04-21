@@ -111,6 +111,16 @@ while (question !== "NO") {
   }
 }*/
 
+function comprobar(checkbox) {
+  otro = checkbox.parentNode.querySelector(
+    "[type=checkbox]:not(#" + checkbox.id + ")"
+  );
+
+  if (otro.checked) {
+    otro.checked = false;
+  }
+}
+
 let newProductos = document.getElementById("todo");
 let btn_agregar = document.getElementById("addTodo");
 let lista = document.getElementById("todoList");
